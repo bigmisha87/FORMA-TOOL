@@ -9,6 +9,7 @@
 - Keep originals untouched, report actual output sizes and dimensions, and never claim guaranteed lossless compression for PNG/GIF color quantization or rasterized PDF compression.
 - GitHub Pages is enabled by the owner. The workflow must not enable it itself. The expected site is `https://bigmisha87.github.io/FORMA-TOOL/`.
 - Test meaningful file changes through downloaded output, not only success messages. Run `npm test`, the relevant browser tests, `npm run build`, and `npm run test:production` when processing, workers, dependencies or deployment paths change. Optional full browser matrix: `npm run test:browsers`.
+- Compression uses MozJPEG (standard quantization, fixed 4:2:0), Oxipng (alpha optimization off), and Gifsicle -O2 --careful. PNG/GIF default to all colors (colors=0). Do not silently enable lossy palette reduction. Keep the codec source archives and notices in the published build. Run the old/new benchmark and independent quality audit when changing codec settings; see docs/COMPRESSION_BENCHMARK.md.
 - The PNG encoder uses the ESM-compatible `@pdf-lib/upng` fork. Check both development and compiled worker builds when changing encoders.
 
 ## Misha's media generation rules

@@ -7,3 +7,6 @@ playwright-report/
 .env*
 tmp/
 public/pdfjs/
+public/codecs/
+public/third_party/
+public/THIRD_PARTY_NOTICES.md

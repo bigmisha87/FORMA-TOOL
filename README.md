@@ -15,7 +15,7 @@
 | תמונות | PDF |
 | --- | --- |
 | הקטנת JPEG ו־WebP למשקל יעד ב־KB או באחוזים | שינוי סדר העמודים בגרירה או בחצים |
-| הקטנת PNG ו־GIF באמצעות צמצום צבעים | סיבוב, מחיקה ובחירת עמודים |
+| הקטנת PNG ו־GIF ללא איבוד צבעים כברירת מחדל | סיבוב, מחיקה ובחירת עמודים |
 | שמירת האנימציה, התזמון והלולאה ב־GIF | איחוד כמה מסמכים |
 | שינוי מידות ותבניות מוכנות לרשתות, באנרים ומייל | חילוץ עמודים נבחרים למסמך אחד |
 | שמירת פרופורציות כברירת מחדל | פיצול לעמודים נפרדים בתוך ZIP |
@@ -47,7 +47,7 @@
 ## דברים שכדאי לדעת
 
 - דחיסה למשקל יעד של JPEG / WebP עשויה להקטין גם את מידות התמונה. אם היעד לא הושג, תופיע הודעה.
-- PNG / GIF משתמשים בצמצום צבעים; אחוז החיסכון אינו מובטח וייתכנו שינויי גוונים.
+- PNG / GIF שומרים על הצבעים והשקיפות כברירת מחדל. צמצום צבעים הוא אפשרות נוספת ועלול לשנות גוונים. אחוז החיסכון אינו מובטח.
 - תבנית עם שמירת פרופורציות היא מסגרת מקסימלית ללא חיתוך; למשל תמונה רחבה בתוך 1080 × 1080 יכולה להסתיים ב־1080 × 540. ניתן לבטל שמירת פרופורציות כדי למתוח למידות הרצויות.
 - המרת GIF מונפש לפורמט אחר שומרת את הפריים הראשון. APNG ו־WebP מונפש נדחים במפורש, כדי לא לאבד אנימציה בטעות.
 - JPEG אינו תומך בשקיפות. אזורים שקופים מקבלים רקע לבן.
@@ -88,10 +88,12 @@ npm run test:browsers
 
 בדיקות הדפדפן פותחות ומפענחות את הקבצים שהורדו, בודקות מספר בתים ומשקל יעד, מידות ופרופורציות, שקיפות, אנימציית GIF, ייחוד שמות בתוך ZIP, נתוני CSV, וסדר / סיבוב / מספר עמודים ב־PDF. בנוסף נבדקים מובייל, עברית / אנגלית, שמירת העדפות, עזרה ושגיאות קלט. פרטי האימות ב־[TESTING.md](TESTING.md).
 
-`npm ci` מעתיק את משאבי PDF.js המקומיים ל־`public/pdfjs`. המשאבים נארזים באתר; לא נדרש CDN חיצוני. הנתיבים בבנייה יחסיים ותומכים בכתובת המשנה של GitHub Pages.
+`npm ci` מעתיק מקומית את מנועי MozJPEG, Oxipng ו־Gifsicle ואת משאבי PDF.js. המשאבים נארזים באתר; לא נדרש CDN חיצוני. הנתיבים בבנייה יחסיים ותומכים בכתובת המשנה של GitHub Pages.
 
 ## קוד פתוח
 
-הפרויקט משתמש ב־[pdf-lib](https://pdf-lib.js.org/) (MIT), ב־[Mozilla PDF.js](https://mozilla.github.io/pdf.js/) (Apache-2.0), ב־[UPNG.js](https://github.com/photopea/UPNG.js), ב־[gifuct-js](https://github.com/matt-way/gifuct-js), ב־[gifenc](https://github.com/mattdesl/gifenc) וב־[fflate](https://github.com/101arrowz/fflate) (MIT). רישיונות הספריות והגופן מופיעים ב־[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) ובמשאבי PDF.js הנלווים.
+דחיסת JPEG משתמשת ב־[MozJPEG](https://github.com/mozilla/mozjpeg) דרך jSquash; דחיסת PNG ב־[Oxipng](https://github.com/shssoichiro/oxipng); דחיסת GIF ב־[Gifsicle](https://www.lcdf.org/gifsicle/) (GPL-2.0-or-later). קוד המקור והוראות הבנייה של Gifsicle כלולים ב־[third_party/gifsicle](third_party/gifsicle) וזמינים גם באתר. [דוח ההשוואה מול המנוע הקודם](docs/COMPRESSION_BENCHMARK.md) כולל משקלים, מדדי איכות ואימות שקיפות ואנימציה.
+
+הפרויקט משתמש גם ב־[pdf-lib](https://pdf-lib.js.org/) (MIT), ב־[Mozilla PDF.js](https://mozilla.github.io/pdf.js/) (Apache-2.0), ב־[UPNG.js](https://github.com/photopea/UPNG.js), ב־[gifuct-js](https://github.com/matt-way/gifuct-js), ב־[gifenc](https://github.com/mattdesl/gifenc) וב־[fflate](https://github.com/101arrowz/fflate) (MIT). רישיונות הספריות והגופן מופיעים ב־[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) ובמשאבי PDF.js הנלווים.
 
 </div>

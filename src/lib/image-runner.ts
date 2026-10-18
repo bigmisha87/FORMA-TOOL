@@ -10,6 +10,6 @@ export function runImage(file: File, settings: ImageSettings, progress: Progress
       if (data.error) { worker.terminate(); reject(new Error(data.error)); }
     };
     worker.onerror = () => { worker.terminate(); reject(new Error('genericError')); };
-    worker.postMessage({file,settings});
+    worker.postMessage({file,settings,baseURL:new URL(import.meta.env.BASE_URL,document.baseURI).href});
   });
 }

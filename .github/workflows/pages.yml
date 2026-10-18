@@ -29,6 +29,12 @@ jobs:
       - run: npm test
       - run: npx playwright install --with-deps chrome
       - run: npm run test:e2e
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tests/benchmark/requirements.txt
+      - run: npm run benchmark
+      - run: python scripts/measure-compression.py
       - run: npm run build
       - run: npm run test:production
       - name: Upload browser test report

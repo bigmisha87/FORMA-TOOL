@@ -2,6 +2,7 @@ import UPNG from '@pdf-lib/upng';
 import { parseGIF, decompressFrames } from 'gifuct-js';
 import { GIFEncoder, quantize, applyPalette } from 'gifenc';
 import { checkPixels, fail, fit, MAX_IMAGE_BYTES, outputName, tick } from './common';
+import { mozJpeg, oxipng, gifsicle } from './codecs';
 
 export type ImageFormat = 'original' | 'jpeg' | 'png' | 'webp' | 'gif';
 export type ImageTask = 'compress' | 'resize' | 'convert' | 'inspect';
@@ -9,7 +10,7 @@ export type ImageSettings = {
   task: ImageTask; format: ImageFormat; mode: 'recommended' | 'target'; reduction: number;
   targetKB: number; width: number; height: number; keep: boolean; upscale: boolean; colors: number;
 };
-export const defaultImageSettings: ImageSettings = { task: 'compress', format: 'original', mode: 'recommended', reduction: 40, targetKB: 200, width: 1920, height: 1080, keep: true, upscale: false, colors: 128 };
+export const defaultImageSettings: ImageSettings = { task: 'compress', format: 'original', mode: 'recommended', reduction: 40, targetKB: 200, width: 1920, height: 1080, keep: true, upscale: false, colors: 0 };
 export type ImageInfo = { width: number; height: number; format: string; frames: number };
 export type ImageResult = ImageInfo & { blob: Blob; name: string; originalSize: number; targetMet: boolean; keptOriginal: boolean; flattened: boolean };
 export type Progress = (fraction: number) => void;
@@ -122,9 +123,12 @@ export async function processImage(file: File, settings: ImageSettings, progress
   if (settings.task === 'resize') ({ width, height } = fit(width, height, settings.width, settings.height, settings.keep, settings.upscale));
   const result = (blob: Blob, targetMet = true, keptOriginal = false): ImageResult => ({ ...info, width, height, frames: format === 'gif' ? info.frames : 1, format, blob, name: outputName(file.name, format === 'jpeg' ? 'jpg' : format), originalSize: file.size, targetMet, keptOriginal, flattened: info.frames > 1 && format !== 'gif' });
   if (format === 'gif' && info.format === 'gif') {
-    const blob = await encodeGif(file, info, width, height, settings.task === 'compress' ? settings.colors : 256, progress);
+    const blob = settings.task === 'compress'
+      ? await gifsicle(file, settings.colors)
+      : await gifsicle(await encodeGif(file, info, width, height, 256, progress));
+    progress(1);
     if (settings.task === 'compress' && blob.size >= file.size) return result(file, true, true);
-    return result(blob);
+    return { ...result(blob), frames: (await inspectImage(new File([blob], file.name))).frames };
   }
   let bitmap: ImageBitmap;
   if (info.format === 'gif') {
@@ -146,10 +150,12 @@ export async function processImage(file: File, settings: ImageSettings, progress
       let best: Blob | undefined;
       for (let shrink = 0; shrink < 12; shrink++) {
         let lo = .08, hi = .96;
-        const smallest = await toBlob(c, `image/${format}`, lo);
+        const pixels = format === 'jpeg' ? context(c).getImageData(0, 0, width, height) : undefined;
+        const encode = (q: number) => pixels ? mozJpeg(pixels,q) : toBlob(c, `image/${format}`, q);
+        const smallest = await encode(lo);
         if (smallest.size <= target) {
           best = smallest;
-          for (let i = 0; i < 8; i++) { const q = (lo + hi) / 2; const b = await toBlob(c, `image/${format}`, q); if (b.size <= target) { best = b; lo = q; } else hi = q; }
+          for (let i = 0; i < 8; i++) { const q = (lo + hi) / 2; const b = await encode(q); if (b.size <= target) { best = b; lo = q; } else hi = q; }
           break;
         }
         best = smallest;
@@ -160,8 +166,13 @@ export async function processImage(file: File, settings: ImageSettings, progress
       }
       blob = best!;
     } else if (format === 'png') {
-      const rgba = context(c).getImageData(0, 0, width, height);
-      blob = new Blob([UPNG.encode([rgba.data.buffer as ArrayBuffer], width, height, settings.task === 'compress' ? settings.colors : 0)], { type: 'image/png' });
+      if (settings.task === 'compress' && info.format === 'png' && !settings.colors) {
+        blob = await oxipng(await file.arrayBuffer());
+      } else {
+        const rgba = context(c).getImageData(0, 0, width, height);
+        const png = UPNG.encode([rgba.data.buffer as ArrayBuffer], width, height, settings.task === 'compress' ? settings.colors : 0);
+        blob = await oxipng(png);
+      }
     } else if (format === 'gif') {
       const rgba = context(c).getImageData(0, 0, width, height).data;
       const palette = quantize(rgba, 256, { format: 'rgba4444', oneBitAlpha: true });
@@ -169,7 +180,7 @@ export async function processImage(file: File, settings: ImageSettings, progress
       const ti = palette.findIndex((p: number[]) => p[3] === 0);
       gif.writeFrame(indices, width, height, { palette, transparent: ti >= 0, transparentIndex: Math.max(0, ti), repeat: -1 }); gif.finish();
       blob = new Blob([gif.bytes() as BlobPart], { type: 'image/gif' });
-    } else blob = await toBlob(c, `image/${format}`, .9);
+    } else blob = format === 'jpeg' ? await mozJpeg(context(c).getImageData(0,0,width,height),.9) : await toBlob(c, `image/${format}`, .9);
     progress(1);
     if (settings.task === 'compress' && format === info.format && blob.size >= file.size && width === info.width && height === info.height) return result(file, file.size <= target, true);
     return result(blob, blob.size <= target);

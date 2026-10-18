@@ -1,0 +1,386 @@
+[
+  {
+    "name": "photo",
+    "type": "jpeg",
+    "originalBytes": 9299,
+    "old-default": {
+      "bytes": 5557,
+      "width": 227,
+      "height": 149,
+      "ms": 6,
+      "keptOriginal": false,
+      "ssim": 0.973356,
+      "psnr": 38.927
+    },
+    "old-lossless": {
+      "bytes": 5557,
+      "width": 227,
+      "height": 149,
+      "ms": 5,
+      "keptOriginal": false,
+      "ssim": 0.973356,
+      "psnr": 38.927
+    },
+    "new": {
+      "bytes": 5524,
+      "width": 227,
+      "height": 149,
+      "ms": 68,
+      "keptOriginal": false,
+      "ssim": 0.985497,
+      "psnr": 41.324
+    }
+  },
+  {
+    "name": "bird",
+    "type": "jpeg",
+    "originalBytes": 19617,
+    "old-default": {
+      "bytes": 11663,
+      "width": 192,
+      "height": 144,
+      "ms": 6,
+      "keptOriginal": false,
+      "ssim": 0.969272,
+      "psnr": 33.873
+    },
+    "old-lossless": {
+      "bytes": 11663,
+      "width": 192,
+      "height": 144,
+      "ms": 5,
+      "keptOriginal": false,
+      "ssim": 0.969272,
+      "psnr": 33.873
+    },
+    "new": {
+      "bytes": 11328,
+      "width": 192,
+      "height": 144,
+      "ms": 68,
+      "keptOriginal": false,
+      "ssim": 0.975718,
+      "psnr": 35.027
+    }
+  },
+  {
+    "name": "landscape",
+    "type": "jpeg",
+    "originalBytes": 13326,
+    "old-default": {
+      "bytes": 7892,
+      "width": 120,
+      "height": 96,
+      "ms": 5,
+      "keptOriginal": false,
+      "ssim": 0.980246,
+      "psnr": 27.271
+    },
+    "old-lossless": {
+      "bytes": 7892,
+      "width": 120,
+      "height": 96,
+      "ms": 4,
+      "keptOriginal": false,
+      "ssim": 0.980246,
+      "psnr": 27.271
+    },
+    "new": {
+      "bytes": 7980,
+      "width": 120,
+      "height": 96,
+      "ms": 64,
+      "keptOriginal": false,
+      "ssim": 0.983708,
+      "psnr": 28.164
+    }
+  },
+  {
+    "name": "monkey",
+    "type": "jpeg",
+    "originalBytes": 22592,
+    "old-default": {
+      "bytes": 13394,
+      "width": 149,
+      "height": 227,
+      "ms": 6,
+      "keptOriginal": false,
+      "ssim": 0.957086,
+      "psnr": 34.678
+    },
+    "old-lossless": {
+      "bytes": 13394,
+      "width": 149,
+      "height": 227,
+      "ms": 5,
+      "keptOriginal": false,
+      "ssim": 0.957086,
+      "psnr": 34.678
+    },
+    "new": {
+      "bytes": 13392,
+      "width": 149,
+      "height": 227,
+      "ms": 83,
+      "keptOriginal": false,
+      "ssim": 0.967216,
+      "psnr": 36.345
+    }
+  },
+  {
+    "name": "astronaut",
+    "type": "jpeg",
+    "originalBytes": 108432,
+    "old-default": {
+      "bytes": 62180,
+      "width": 512,
+      "height": 512,
+      "ms": 23,
+      "keptOriginal": false,
+      "ssim": 0.972947,
+      "psnr": 38.832
+    },
+    "old-lossless": {
+      "bytes": 62180,
+      "width": 512,
+      "height": 512,
+      "ms": 20,
+      "keptOriginal": false,
+      "ssim": 0.972947,
+      "psnr": 38.832
+    },
+    "new": {
+      "bytes": 63955,
+      "width": 512,
+      "height": 512,
+      "ms": 370,
+      "keptOriginal": false,
+      "ssim": 0.975596,
+      "psnr": 39.124
+    }
+  },
+  {
+    "name": "logo",
+    "type": "png",
+    "originalBytes": 1076040,
+    "old-default": {
+      "bytes": 4208,
+      "width": 640,
+      "height": 420,
+      "ms": 52,
+      "keptOriginal": false,
+      "pixelExact": false,
+      "maxChannelDifference": 2
+    },
+    "old-lossless": {
+      "bytes": 4611,
+      "width": 640,
+      "height": 420,
+      "ms": 14,
+      "keptOriginal": false,
+      "pixelExact": true,
+      "maxChannelDifference": 0
+    },
+    "new": {
+      "bytes": 3952,
+      "width": 640,
+      "height": 420,
+      "ms": 109,
+      "keptOriginal": false,
+      "pixelExact": true,
+      "maxChannelDifference": 0
+    }
+  },
+  {
+    "name": "gradient-alpha",
+    "type": "png",
+    "originalBytes": 1076040,
+    "old-default": {
+      "bytes": 14132,
+      "width": 640,
+      "height": 420,
+      "ms": 65,
+      "keptOriginal": false,
+      "pixelExact": false,
+      "maxChannelDifference": 255
+    },
+    "old-lossless": {
+      "bytes": 322991,
+      "width": 640,
+      "height": 420,
+      "ms": 37,
+      "keptOriginal": false,
+      "pixelExact": false,
+      "maxChannelDifference": 255
+    },
+    "new": {
+      "bytes": 16054,
+      "width": 640,
+      "height": 420,
+      "ms": 139,
+      "keptOriginal": false,
+      "pixelExact": true,
+      "maxChannelDifference": 0
+    }
+  },
+  {
+    "name": "astronaut",
+    "type": "png",
+    "originalBytes": 440418,
+    "old-default": {
+      "bytes": 101779,
+      "width": 512,
+      "height": 512,
+      "ms": 111,
+      "keptOriginal": false,
+      "pixelExact": false,
+      "maxChannelDifference": 65
+    },
+    "old-lossless": {
+      "bytes": 440418,
+      "width": 512,
+      "height": 512,
+      "ms": 63,
+      "keptOriginal": true,
+      "pixelExact": true,
+      "maxChannelDifference": 0
+    },
+    "new": {
+      "bytes": 420607,
+      "width": 512,
+      "height": 512,
+      "ms": 178,
+      "keptOriginal": false,
+      "pixelExact": true,
+      "maxChannelDifference": 0
+    }
+  },
+  {
+    "name": "logo-optimized",
+    "type": "png",
+    "originalBytes": 8229,
+    "old-default": {
+      "bytes": 4208,
+      "width": 640,
+      "height": 420,
+      "ms": 22,
+      "keptOriginal": false,
+      "pixelExact": false,
+      "maxChannelDifference": 2
+    },
+    "old-lossless": {
+      "bytes": 4611,
+      "width": 640,
+      "height": 420,
+      "ms": 8,
+      "keptOriginal": false,
+      "pixelExact": true,
+      "maxChannelDifference": 0
+    },
+    "new": {
+      "bytes": 3952,
+      "width": 640,
+      "height": 420,
+      "ms": 53,
+      "keptOriginal": false,
+      "pixelExact": true,
+      "maxChannelDifference": 0
+    }
+  },
+  {
+    "name": "animation-disposal-1",
+    "type": "gif",
+    "originalBytes": 3992,
+    "old-default": {
+      "bytes": 3944,
+      "width": 240,
+      "height": 160,
+      "ms": 35,
+      "keptOriginal": false,
+      "animationExact": true,
+      "frames": 8
+    },
+    "old-lossless": {
+      "bytes": 3944,
+      "width": 240,
+      "height": 160,
+      "ms": 25,
+      "keptOriginal": false,
+      "animationExact": true,
+      "frames": 8
+    },
+    "new": {
+      "bytes": 1466,
+      "width": 240,
+      "height": 160,
+      "ms": 30,
+      "keptOriginal": false,
+      "animationExact": true,
+      "frames": 8
+    }
+  },
+  {
+    "name": "animation-disposal-2",
+    "type": "gif",
+    "originalBytes": 3992,
+    "old-default": {
+      "bytes": 3944,
+      "width": 240,
+      "height": 160,
+      "ms": 25,
+      "keptOriginal": false,
+      "animationExact": true,
+      "frames": 8
+    },
+    "old-lossless": {
+      "bytes": 3944,
+      "width": 240,
+      "height": 160,
+      "ms": 23,
+      "keptOriginal": false,
+      "animationExact": true,
+      "frames": 8
+    },
+    "new": {
+      "bytes": 858,
+      "width": 240,
+      "height": 160,
+      "ms": 25,
+      "keptOriginal": false,
+      "animationExact": true,
+      "frames": 8
+    }
+  },
+  {
+    "name": "animation-disposal-3",
+    "type": "gif",
+    "originalBytes": 3992,
+    "old-default": {
+      "bytes": 3944,
+      "width": 240,
+      "height": 160,
+      "ms": 24,
+      "keptOriginal": false,
+      "animationExact": true,
+      "frames": 8
+    },
+    "old-lossless": {
+      "bytes": 3944,
+      "width": 240,
+      "height": 160,
+      "ms": 24,
+      "keptOriginal": false,
+      "animationExact": true,
+      "frames": 8
+    },
+    "new": {
+      "bytes": 858,
+      "width": 240,
+      "height": 160,
+      "ms": 26,
+      "keptOriginal": false,
+      "animationExact": true,
+      "frames": 8
+    }
+  }
+]
