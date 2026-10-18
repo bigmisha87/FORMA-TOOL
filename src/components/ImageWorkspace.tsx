@@ -78,7 +78,7 @@ export default function ImageWorkspace() {
     } catch (e) { setError(errorKey(e)); } finally { setBusy(false); }
   }
   return <section aria-labelledby="image-heading" className="workspace-section">
-    <div className="section-heading"><div><h2 id="image-heading">{t('imageHeading')}</h2><p>{t('imageSub')}</p></div><span className="section-label"><span/>IMAGE STUDIO</span></div>
+    <div className="section-heading"><div><h1 id="image-heading">{t('imageHeading')}</h1><p>{t('imageSub')}</p></div><span className="section-label"><span/>IMAGE STUDIO</span></div>
     <div className="workspace-grid"><aside className="tool-sidebar"><div className="sidebar-label">01 <span>{t('stepOne')}</span></div><div className="tool-list">{tools.map(tool => <div className={`tool-wrap ${settings.task === tool.task ? 'active' : ''}`} key={tool.task}>
       <button title={t(tool.sub)} disabled={busy} className="tool-button" aria-pressed={settings.task === tool.task} onClick={() => update({ task: tool.task, format: tool.task === 'convert' ? 'jpeg' : 'original' })}><tool.icon size={21}/><span><b>{t(tool.title)}</b><small>{t(tool.sub)}</small></span>{settings.task === tool.task && <Check size={15}/>}</button><HelpButton title={t(tool.title)} text={t(tool.help)}/>
     </div>)}</div><div className="sidebar-tip"><Layers size={20}/><p>{t('batchNote')}</p><small>{t('single')}</small></div></aside>

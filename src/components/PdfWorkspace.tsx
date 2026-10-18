@@ -73,7 +73,7 @@ export default function PdfWorkspace() {
     setBusy(true); try { download(await zipFiles(results), 'forma-pdfs.zip'); } catch (e) { setError(errorKey(e)); } finally { setBusy(false); }
   }
   return <section aria-labelledby="pdf-heading" className="workspace-section">
-    <div className="section-heading"><div><h2 id="pdf-heading">{t('pdfHeading')}</h2><p>{t('pdfSub')}</p></div><span className="section-label"><span/>PDF STUDIO</span></div>
+    <div className="section-heading"><div><h1 id="pdf-heading">{t('pdfHeading')}</h1><p>{t('pdfSub')}</p></div><span className="section-label"><span/>PDF STUDIO</span></div>
     <div className="workspace-grid"><aside className="tool-sidebar"><div className="sidebar-label">01 <span>{t('stepOne')}</span></div><div className="tool-list">{tools.map(tool => <div key={tool.mode} className={`tool-wrap ${mode === tool.mode ? 'active' : ''}`}><button disabled={busy} className="tool-button" title={t(tool.sub)} aria-pressed={mode === tool.mode} onClick={() => { setMode(tool.mode); invalidate(); }}><tool.icon size={21}/><span><b>{t(tool.title)}</b><small>{t(tool.sub)}</small></span>{mode === tool.mode && <Check size={15}/>}</button><HelpButton title={t(tool.title)} text={t(tool.help)}/></div>)}</div><div className="sidebar-tip"><Files size={20}/><p>{t('pdfArrangeHint')}</p></div></aside>
     <div className="work-area"><Dropzone pdf add={add} disabled={busy}/>
       <fieldset className="options-panel" disabled={busy}><legend>{t(mode === 'compress' ? 'pdfCompression' : mode === 'split' ? 'split' : mode === 'images' ? 'pdfImages' : 'organize')}<HelpButton title={t('pdfHelpTitle')} text={t('pdfHelpText')}/></legend>

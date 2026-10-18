@@ -1,6 +1,7 @@
 # FORMA development notes
 
 - Preserve Hebrew as the default language and RTL layout. Keep English translations complete.
+- Open directly on the tools for daily use. Keep introductions and general explanations in Help or below the workspace, never in a hero section above the tools.
 - Process user files locally. Do not add file uploads, accounts, telemetry or external processing services without an explicit request.
 - Keep originals untouched, report actual output sizes and dimensions, and never claim guaranteed lossless compression for PNG/GIF color quantization or rasterized PDF compression.
 - GitHub Pages is enabled by the owner. The workflow must not enable it itself. The expected site is `https://bigmisha87.github.io/FORMA-TOOL/`.

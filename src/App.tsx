@@ -1,11 +1,11 @@
 import { Component, Suspense, lazy, useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
-import { ArrowDownLeft, ArrowUpRight, Check, CircleHelp, Files, Globe2, Image, Layers, Moon, Settings2, ShieldCheck, Sparkles, Sun } from 'lucide-react';
+import { ArrowUpRight, Check, CircleHelp, Files, Globe2, Image, Layers, Moon, Settings2, ShieldCheck, Sun } from 'lucide-react';
 import { en, he, I18n } from './i18n';
 import type { Key, Lang } from './i18n';
 import ImageWorkspace from './components/ImageWorkspace';
 import HelpPage from './components/HelpPage';
-import { Modal, StepBar } from './components/UI';
+import { Modal } from './components/UI';
 const PdfWorkspace = lazy(() => import('./components/PdfWorkspace'));
 type Tab = 'images' | 'pdf' | 'help';
 type Prefs = { lang: Lang; theme: 'light' | 'dark' | 'system'; tab: Tab };
@@ -36,10 +36,7 @@ export default function App() {
       <nav aria-label={t('workspace')} className="main-nav">{([{ id:'images',icon:Image },{ id:'pdf',icon:Files },{ id:'help',icon:CircleHelp }] as const).map(({ id,icon:Icon }) => <button key={id} title={t(id)} className={tab === id ? 'active' : ''} aria-current={tab === id ? 'page' : undefined} onClick={() => selectTab(id)}><Icon size={17}/>{t(id)}</button>)}</nav>
       <div className="header-actions"><button className="language-btn" title={t('language')} aria-label={t('language')} onClick={() => setPrefs(p => ({...p,lang:p.lang === 'he' ? 'en' : 'he'}))}><Globe2 size={16}/>{prefs.lang === 'he' ? 'EN' : 'עב'}</button><button className="icon-btn" title={t(dark ? 'light' : 'dark')} aria-label={t(dark ? 'light' : 'dark')} onClick={() => setPrefs(p => ({...p,theme:dark ? 'light' : 'dark'}))}>{dark ? <Sun size={18}/> : <Moon size={18}/>}</button><span className="header-divider"/><button className="icon-btn" title={t('settings')} aria-label={t('settings')} onClick={() => setSettingsOpen(true)}><Settings2 size={19}/></button></div>
     </header>
-    <main id="main"><section className="hero"><div className="hero-copy"><span className="eyebrow"><span/>{t('workspace')}</span><h1>{t('heroTitle')}</h1><p>{t('heroSub')}</p><div className="hero-notes"><span><Check size={15}/>{t('free')}</span><span><ShieldCheck size={15}/>{t('local')}</span></div></div>
-      <div className="hero-art" aria-hidden="true"><div className="art-grid"/><div className="floating-tag tag-top"><Sparkles size={13}/><span>LESS SIZE. MORE SPACE.</span></div><div className="paper paper-back"><span>PNG</span><div className="fake-lines"><i/><i/><i/></div></div><div className="paper paper-front"><div className="paper-head"><Image size={17}/><span>JPEG</span><i/></div><div className="landscape"><div className="landscape-sun"/><div className="mountain mountain-back"/><div className="mountain mountain-front"/></div><div className="paper-bottom"><div><i/><i/></div><span><Check size={14}/></span></div></div><div className="art-arrow"><ArrowDownLeft size={26}/></div><div className="floating-tag tag-bottom"><span className="green-check"><Check size={12}/></span><span>READY TO GO</span><span className="mini-weight">↓ 68%</span></div><span className="art-plus plus-one">+</span><span className="art-plus plus-two">+</span></div>
-    </section>
-    <StepBar/>
+    <main id="main">
     <div hidden={tab !== 'images'}><ImageWorkspace/></div>
     {pdfVisited && <div hidden={tab !== 'pdf'}><ErrorBoundary message={t('loadError')}><Suspense fallback={<div className="loading-panel">{t('preparing')}</div>}><PdfWorkspace/></Suspense></ErrorBoundary></div>}
     {tab === 'help' && <HelpPage/>}

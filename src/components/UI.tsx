@@ -33,4 +33,3 @@ export function Dropzone({ pdf = false, add, disabled }: { pdf?: boolean; add: (
 export function Progress({ value, label }: { value: number; label: string }) {
   return <div className="progress-box" role="status"><div><LoaderCircle className="spin" size={17}/><span>{label}</span><b>{Math.round(value * 100)}%</b></div><progress value={value} max={1}/></div>;
 }
-export function StepBar() { const { t } = useT(); return <div className="steps">{(['stepOne','stepTwo','stepThree'] as const).map((key, i) => <div key={key}><span>{i + 1}</span>{t(key)}{i < 2 && <i/>}</div>)}</div>; }

@@ -20,5 +20,6 @@ test('main workspace passes automated accessibility checks in light and dark mod
   await page.goto('/');
   expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa']).analyze()).violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)}))).toEqual([]);
   await page.getByRole('button',{name:'כהה',exact:true}).click();
+  await page.locator('.dropzone').evaluate(async element => { await Promise.all(element.getAnimations().map(animation => animation.finished)); });
   expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa']).analyze()).violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)}))).toEqual([]);
 });
