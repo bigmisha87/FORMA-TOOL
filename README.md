@@ -6,7 +6,7 @@
 
 **[פתיחת הכלי](https://bigmisha87.github.io/FORMA-TOOL/)** · [העדפות Pages במאגר](https://github.com/bigmisha87/FORMA-TOOL/settings/pages) · [בדיקות ופרסום](https://github.com/bigmisha87/FORMA-TOOL/actions)
 
-**מצב הפרסום:** הפרויקט מוכן. הקישור יתחיל לעבוד לאחר הפעלת GitHub Pages וביצוע הפרסום הראשון.
+**פרסום אוטומטי:** כל עדכון ל־`main` עובר בדיקות ומתפרסם ב־GitHub Pages דרך GitHub Actions.
 
 ![תצוגת FORMA בעברית](docs/preview.png)
 
