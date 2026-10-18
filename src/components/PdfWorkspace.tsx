@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowDown, ArrowUp, Check, Download, FileDown, FileImage, Files, Grip, Minimize2, RotateCw, Scissors, Trash2, X } from 'lucide-react';
+import { ArrowDown, ArrowUp, Check, Download, FileImage, Files, Grip, Minimize2, RotateCw, Scissors, Trash2, X } from 'lucide-react';
 import { errorKey, useT } from '../i18n';
 import type { Key } from '../i18n';
 import { download, fail, outputName, parseRange, size, zipFiles } from '../lib/common';
@@ -23,6 +23,7 @@ export default function PdfWorkspace() {
   const [error,setError] = useState<Key | null>(null), [strong,setStrong] = useState(false), [dpi,setDpi] = useState(120);
   const [range,setRange] = useState(''), [results,setResults] = useState<Result[]>([]), [drag,setDrag] = useState<string | null>(null);
   const selected = pages.filter(p => p.selected);
+  const activeTool = tools.find(tool => tool.mode === mode)!;
   const invalidate = () => setResults([]);
   async function add(files: File[]) {
     if (busy || !files.length) return;
@@ -87,7 +88,7 @@ export default function PdfWorkspace() {
         <div className="page-top"><label><input type="checkbox" disabled={busy} checked={p.selected} aria-label={`${t('page')} ${i+1}`} title={`${t('page')} ${i+1}`} onChange={e => { setPages(old => old.map(v => v.id === p.id ? {...v,selected:e.target.checked} : v)); invalidate(); }}/><span>{i+1}</span></label><Grip size={16}/></div><div className="page-preview"><img style={{ transform:`rotate(${p.rotation}deg)` }} src={p.thumbnail} alt={`${t('page')} ${p.index+1}`}/></div><small className="page-source" title={sources.find(s => s.id === p.source)?.file.name}>{sources.find(s => s.id === p.source)?.file.name} · {p.index+1}</small>
         <div className="page-actions"><button className="icon-btn" disabled={busy || i === 0} title={t('moveEarlier')} aria-label={`${t('moveEarlier')} ${i+1}`} onClick={() => move(p.id,i-1)}><ArrowUp size={15}/></button><button className="icon-btn" disabled={busy || i === pages.length-1} title={t('moveLater')} aria-label={`${t('moveLater')} ${i+1}`} onClick={() => move(p.id,i+1)}><ArrowDown size={15}/></button><button className="icon-btn" disabled={busy} title={t('rotate')} aria-label={`${t('rotate')} ${i+1}`} onClick={() => { setPages(old => old.map(v => v.id === p.id ? {...v,rotation:(v.rotation+90)%360} : v)); invalidate(); }}><RotateCw size={15}/></button><button className="icon-btn" disabled={busy} title={t('deletePage')} aria-label={`${t('deletePage')} ${i+1}`} onClick={() => { setPages(old => old.filter(v => v.id !== p.id)); invalidate(); }}><Trash2 size={15}/></button></div>
       </article>)}</div></>}
-      {!!sources.length && <div className="action-bar"><span>{mode === 'compress' ? sources.length : selected.length} {t(mode === 'compress' ? 'files' : 'selected')}</span><button className="btn primary" disabled={busy || (mode !== 'compress' && !selected.length)} title={t(mode === 'organize' ? 'savePdf' : mode === 'compress' ? 'process' : 'downloadZip')} onClick={run}><FileDown size={17}/>{t(mode === 'organize' ? 'savePdf' : mode === 'compress' ? 'process' : 'downloadZip')}</button></div>}
+      {!!sources.length && <div className="action-bar"><span>{mode === 'compress' ? sources.length : selected.length} {t(mode === 'compress' ? 'files' : 'selected')}</span><button className="btn primary" disabled={busy || (mode !== 'compress' && !selected.length)} title={t(activeTool.title)} onClick={run}><activeTool.icon size={17}/>{busy ? t('processing') : t(activeTool.title)}</button></div>}
       {!!results.length && <div className="pdf-results" role="status"><h3><Check size={18}/>{t('done')}</h3>{results.map((result,i) => <div key={i}><span><b dir="auto">{result.name}</b><small dir="ltr">{result.before ? `${size(result.before)} → ` : ''}{size(result.blob.size)}</small>{result.before === result.blob.size && <small>{t('originalPdf')}</small>}</span><button className="btn secondary" disabled={busy} title={t('download')} onClick={() => download(result.blob,result.name)}><Download size={16}/>{t('download')}</button></div>)}{results.length > 1 && <button className="btn primary" disabled={busy} title={t('downloadAll')} onClick={downloadResults}><Download size={16}/>{t('downloadAll')}</button>}</div>}
       {!sources.length && <div className="empty-state"><Files size={27}/><div><b>{t('pdfEmpty')}</b><p>{t('pdfEmptySub')}</p></div></div>}
     </div></div>

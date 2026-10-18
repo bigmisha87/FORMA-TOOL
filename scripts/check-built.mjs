@@ -22,13 +22,13 @@ try {
   });
   await page.getByRole('button',{name:'שינוי מידות הגודל הנכון לכל מקום'}).click();
   await page.getByTestId('image-upload').setInputFiles({name:'production.png',mimeType:'image/png',buffer:Buffer.from(image,'base64')});
-  await page.locator('#width').fill('120');await page.locator('#height').fill('80');await page.getByRole('button',{name:'הכנת הקבצים',exact:true}).click();
+  await page.locator('#width').fill('120');await page.locator('#height').fill('80');await page.getByRole('button',{name:'שינוי מידות',exact:true}).click();
   await page.getByRole('button',{name:'הורדה production.png',exact:true}).waitFor();assert.equal(workerStarted,true);
   console.log('Image worker passed');
   await page.getByRole('button',{name:'כלי PDF',exact:true}).click();
   const fixture=await PDFDocument.create();fixture.addPage([400,600]).drawRectangle({x:20,y:20,width:360,height:560,color:rgb(.3,.6,.4)});fixture.addPage([500,600]);
   await page.getByTestId('pdf-upload').setInputFiles({name:'production.pdf',mimeType:'application/pdf',buffer:Buffer.from(await fixture.save())});
-  await page.getByRole('button',{name:'סיבוב 90° 1',exact:true}).click();await page.getByRole('button',{name:'הכנת PDF להורדה',exact:true}).click();
+  await page.getByRole('button',{name:'סיבוב 90° 1',exact:true}).click();await page.getByRole('button',{name:'סידור ואיחוד',exact:true}).click();
   const waiting=page.waitForEvent('download');await page.getByRole('button',{name:'הורדה',exact:true}).click();const stream=await (await waiting).createReadStream();const chunks=[];for await(const chunk of stream)chunks.push(chunk);const output=await PDFDocument.load(Buffer.concat(chunks));
   assert.equal(output.getPageCount(),2);assert.equal(output.getPage(0).getRotation().angle,90);assert.deepEqual(errors,[]);assert.deepEqual(failedRequests,[]);
   const result={url,passed:true,imageWorker:true,pdfWorker:true,pages:output.getPageCount(),runtimeErrors:errors,failedRequests};
