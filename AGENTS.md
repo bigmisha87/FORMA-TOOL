@@ -4,6 +4,7 @@
 - Open directly on the tools for daily use. Keep introductions and general explanations in Help or below the workspace, never in a hero section above the tools.
 - Use golden yellow accents with white, black and neutral grays in both light and dark themes. Do not reintroduce the previous green palette.
 - Primary action buttons must display the selected operation's name, for both image and PDF tools, in the active language.
+- Indicate the active tool through its color highlight; do not add a redundant checkmark to tool buttons.
 - Process user files locally. Do not add file uploads, accounts, telemetry or external processing services without an explicit request.
 - Keep originals untouched, report actual output sizes and dimensions, and never claim guaranteed lossless compression for PNG/GIF color quantization or rasterized PDF compression.
 - GitHub Pages is enabled by the owner. The workflow must not enable it itself. The expected site is `https://bigmisha87.github.io/FORMA-TOOL/`.
