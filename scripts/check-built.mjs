@@ -13,7 +13,13 @@ const page = await context.newPage();
 page.setDefaultTimeout(15_000);
 const errors = [], failedRequests = [];
 page.on('pageerror',error => errors.push(error.message));
-page.on('response',response => { if (response.status() >= 400) failedRequests.push(`${response.status()} ${response.url()}`); });
+page.on('response',response => {
+  if (response.status() >= 400) failedRequests.push(`${response.status()} ${response.url()}`);
+  // Preview servers can return the app HTML for a missing asset with status 200.
+  if (new URL(response.url()).pathname.endsWith('.wasm') && !response.headers()['content-type']?.includes('application/wasm')) {
+    failedRequests.push(`Invalid WASM content type: ${response.url()}`);
+  }
+});
 let workerStarted = false; page.on('worker',() => { workerStarted=true; });
 try {
   await page.goto(url); await page.evaluate(() => document.fonts.ready);

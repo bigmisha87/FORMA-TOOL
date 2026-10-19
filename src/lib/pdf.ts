@@ -20,9 +20,9 @@ export async function loadPdf(file: File): Promise<PdfSource> {
   if (doc.getPageCount() < 1) fail('invalidPdf');
   // Keep a separate buffer: PDF.js transfers its input into the rendering worker.
   const loadingTask = pdfjs.getDocument({ data: bytes.slice(),
-    cMapUrl: `${import.meta.env.BASE_URL}pdfjs/cmaps/`, cMapPacked: true,
-    standardFontDataUrl: `${import.meta.env.BASE_URL}pdfjs/standard_fonts/`,
-    wasmUrl: `${import.meta.env.BASE_URL}pdfjs/wasm/`,
+    cMapUrl: new URL(`${import.meta.env.BASE_URL}pdfjs/cmaps/`, document.baseURI).href, cMapPacked: true,
+    standardFontDataUrl: new URL(`${import.meta.env.BASE_URL}pdfjs/standard_fonts/`, document.baseURI).href,
+    wasmUrl: new URL(`${import.meta.env.BASE_URL}pdfjs/wasm/`, document.baseURI).href,
   });
   try {
     const preview = await loadingTask.promise;
