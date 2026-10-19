@@ -1,0 +1,4150 @@
+[
+  {
+    "name": "alpha-graphics",
+    "originalBytes": 910730,
+    "engines": {
+      "current-gentle": {
+        "bytes": 909168,
+        "ms": 48,
+        "keptOriginal": false,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 147,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.0,
+        "outputSha256": "6f1ccd9ad8519d67daa6afb5a3ef4a26652ec7d1e3fa602f4d595caa7fa81ee7",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "current-strong": {
+        "bytes": 86343,
+        "ms": 110,
+        "keptOriginal": false,
+        "textExact": false,
+        "textGeometryExact": false,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": false,
+        "allTextCharacters": 0,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 3.08511,
+            "maxDifference": 255,
+            "ssim": 0.955794
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.955794,
+        "maximumMAE": 3.08511,
+        "smallerThanCurrentGentlePercent": 90.5,
+        "outputSha256": "37ee88428fc10bf49a8035e23a889dd6521a46b744332e65bb5248dc53db3f7d",
+        "iccPayloadsExact": false,
+        "alphaMasksExact": false
+      },
+      "qpdf-lossless": {
+        "bytes": 907479,
+        "rawBytes": 907479,
+        "keptOriginal": false,
+        "ms": 88,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 147,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.19,
+        "outputSha256": "f222f8db9624c599323de430e9da1a6e29d55c6bb1300b0f26b6f1007f5e2fb9",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-images": {
+        "bytes": 907463,
+        "rawBytes": 907463,
+        "keptOriginal": false,
+        "ms": 69,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 147,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.19,
+        "outputSha256": "67395f9803113918d0bae51828596084b43813538d583870ea1dd4091088bc3b",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "mupdf-lossless": {
+        "bytes": 908821,
+        "rawBytes": 908821,
+        "keptOriginal": false,
+        "ms": 31,
+        "outputSha256": "7a8545a09f3baab18612cdf7790ddd9eff50e93d6854a28ddf4e9d88c196dc15",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 147,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.04,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective": {
+        "bytes": 114109,
+        "rawBytes": 114109,
+        "keptOriginal": false,
+        "ms": 81,
+        "imageStats": {
+          "images": 2,
+          "recompressed": 2,
+          "jpeg": 2,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 887821,
+          "bytesAfter": 91206,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 2,
+              "changed": 2,
+              "jpeg": 2,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 147,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.42846,
+            "maxDifference": 46,
+            "ssim": 0.996089
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.996089,
+        "maximumMAE": 0.42846,
+        "smallerThanCurrentGentlePercent": 87.45,
+        "outputSha256": "49afee10dcf7cc49623425b3432cbca67387d1ea6bfd6f88ca79564413f8b33d",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective-high": {
+        "bytes": 257353,
+        "rawBytes": 257353,
+        "keptOriginal": false,
+        "ms": 137,
+        "imageStats": {
+          "images": 2,
+          "recompressed": 2,
+          "jpeg": 2,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 887821,
+          "bytesAfter": 234449,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 2,
+              "changed": 2,
+              "jpeg": 2,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "ae4f63ba2e03f6f2fd2880313eca8a116b8c26e26101be0327d7e85b94c49415",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 147,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.19545,
+            "maxDifference": 15,
+            "ssim": 0.998576
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.998576,
+        "maximumMAE": 0.19545,
+        "smallerThanCurrentGentlePercent": 71.69,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "hybrid-high": {
+        "bytes": 255441,
+        "rawBytes": 255441,
+        "keptOriginal": false,
+        "ms": 30,
+        "precedingImageMs": 137,
+        "outputSha256": "0ec92a4083b9b5204c600c15d4dafbc33dd828767ae3df1d62d707c4e02201b4",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 147,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.19545,
+            "maxDifference": 15,
+            "ssim": 0.998576
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.998576,
+        "maximumMAE": 0.19545,
+        "smallerThanCurrentGentlePercent": 71.9,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      }
+    },
+    "inputSha256": "4d99b6f3fbd77dcfea388ad23ddbea40c9c7fe3ff292ff925c938f94060d8147",
+    "pages": 1,
+    "textCharacters": 147
+  },
+  {
+    "name": "duplicate-assets",
+    "originalBytes": 4866987,
+    "engines": {
+      "current-gentle": {
+        "bytes": 4796782,
+        "ms": 206,
+        "keptOriginal": false,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 472,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.0,
+        "outputSha256": "5b745ebaa18b609352663ce7f19dcf3617bb3fe76d6e8d38af3c4fa2a74a9e10",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "current-strong": {
+        "bytes": 339985,
+        "ms": 190,
+        "keptOriginal": false,
+        "textExact": false,
+        "textGeometryExact": false,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 0,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 1.93218,
+            "maxDifference": 255,
+            "ssim": 0.967497
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 1.93666,
+            "maxDifference": 255,
+            "ssim": 0.967446
+          },
+          {
+            "page": 3,
+            "pixelExact": false,
+            "mae": 1.93722,
+            "maxDifference": 255,
+            "ssim": 0.967449
+          },
+          {
+            "page": 4,
+            "pixelExact": false,
+            "mae": 1.93414,
+            "maxDifference": 255,
+            "ssim": 0.96745
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.967446,
+        "maximumMAE": 1.93722,
+        "smallerThanCurrentGentlePercent": 92.91,
+        "outputSha256": "e52b4a7064ef30470ffad8039bbb9b8ca2102bf817270a5a1ccb78458461623a",
+        "iccPayloadsExact": false,
+        "alphaMasksExact": true
+      },
+      "qpdf-lossless": {
+        "bytes": 4792307,
+        "rawBytes": 4792307,
+        "keptOriginal": false,
+        "ms": 392,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 472,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.09,
+        "outputSha256": "2fe8339889cabde7258ad087a3c81fe56031c93084bfcfe6dd4dee3fe58f1b55",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-images": {
+        "bytes": 4792281,
+        "rawBytes": 4792281,
+        "keptOriginal": false,
+        "ms": 382,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 472,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.09,
+        "outputSha256": "86d34144bb1a239025bcf27819f5a49372b87266363e23801244e2f920080ce7",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "mupdf-lossless": {
+        "bytes": 660362,
+        "rawBytes": 660362,
+        "keptOriginal": false,
+        "ms": 60,
+        "outputSha256": "971a66bc7fc976a70fbf4c0896fc74fd525b39c08aa0c827a3426369819210d8",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 472,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 86.23,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective": {
+        "bytes": 2597151,
+        "rawBytes": 2597151,
+        "keptOriginal": false,
+        "ms": 161,
+        "imageStats": {
+          "images": 4,
+          "recompressed": 4,
+          "jpeg": 4,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 2511684,
+          "bytesAfter": 241860,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 1,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 2,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 3,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 472,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.61048,
+            "maxDifference": 43,
+            "ssim": 0.993059
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 0.61048,
+            "maxDifference": 43,
+            "ssim": 0.993059
+          },
+          {
+            "page": 3,
+            "pixelExact": false,
+            "mae": 0.61048,
+            "maxDifference": 43,
+            "ssim": 0.993059
+          },
+          {
+            "page": 4,
+            "pixelExact": false,
+            "mae": 0.61048,
+            "maxDifference": 43,
+            "ssim": 0.993059
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.993059,
+        "maximumMAE": 0.61048,
+        "smallerThanCurrentGentlePercent": 45.86,
+        "outputSha256": "e1ca43149bad9156ba07cba974ed0cf7f7aff7b8614f8be8c5eba30da9104625",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective-high": {
+        "bytes": 3004879,
+        "rawBytes": 3004879,
+        "keptOriginal": false,
+        "ms": 303,
+        "imageStats": {
+          "images": 4,
+          "recompressed": 4,
+          "jpeg": 4,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 2511684,
+          "bytesAfter": 649584,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 1,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 2,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 3,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "6f1181ed21b300a5085d292515cc7e28a3902fd35fef01a27ad408e3112b26b3",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 472,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.29014,
+            "maxDifference": 13,
+            "ssim": 0.997536
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 0.29014,
+            "maxDifference": 13,
+            "ssim": 0.997536
+          },
+          {
+            "page": 3,
+            "pixelExact": false,
+            "mae": 0.29014,
+            "maxDifference": 13,
+            "ssim": 0.997536
+          },
+          {
+            "page": 4,
+            "pixelExact": false,
+            "mae": 0.29014,
+            "maxDifference": 13,
+            "ssim": 0.997536
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.997536,
+        "maximumMAE": 0.29014,
+        "smallerThanCurrentGentlePercent": 37.36,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "hybrid-high": {
+        "bytes": 194836,
+        "rawBytes": 194836,
+        "keptOriginal": false,
+        "ms": 67,
+        "precedingImageMs": 303,
+        "outputSha256": "5a4857fa182bc1565dc02cc19c3e688e92b8b8d91b0aafa39aa4843f355ae41e",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 472,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.29014,
+            "maxDifference": 13,
+            "ssim": 0.997536
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 0.29014,
+            "maxDifference": 13,
+            "ssim": 0.997536
+          },
+          {
+            "page": 3,
+            "pixelExact": false,
+            "mae": 0.29014,
+            "maxDifference": 13,
+            "ssim": 0.997536
+          },
+          {
+            "page": 4,
+            "pixelExact": false,
+            "mae": 0.29014,
+            "maxDifference": 13,
+            "ssim": 0.997536
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.997536,
+        "maximumMAE": 0.29014,
+        "smallerThanCurrentGentlePercent": 95.94,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      }
+    },
+    "inputSha256": "9aaa08851f926e12803cf8096947ef34742e85b753c01a84d05a6bee6b12ee63",
+    "pages": 4,
+    "textCharacters": 472
+  },
+  {
+    "name": "hebrew-form",
+    "originalBytes": 66925,
+    "engines": {
+      "current-gentle": {
+        "bytes": 63133,
+        "ms": 4,
+        "keptOriginal": false,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 157,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.0,
+        "outputSha256": "8df7f81d611ae9c5d25269a4c28f14704c765cc8a5e8f19781fe76ef59d84f2a",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "current-strong": {
+        "bytes": 30345,
+        "ms": 46,
+        "keptOriginal": false,
+        "textExact": false,
+        "textGeometryExact": false,
+        "pageGeometryExact": true,
+        "linksExact": false,
+        "formsExact": false,
+        "bookmarksExact": false,
+        "vectorsExact": true,
+        "allTextCharacters": 0,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.88113,
+            "maxDifference": 255,
+            "ssim": 0.990428
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.990428,
+        "maximumMAE": 0.88113,
+        "smallerThanCurrentGentlePercent": 51.93,
+        "outputSha256": "a268ee7c7920e445ec9236cdeb609a87dc7a6b9e046a6c419edc399ebcdb5021",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-lossless": {
+        "bytes": 63091,
+        "rawBytes": 63091,
+        "keptOriginal": false,
+        "ms": 7,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 157,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.07,
+        "outputSha256": "c859ad5fd1ed71907c2d5b46a8280b84ae782a376cd75bd79cec8f0d1bd700da",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-images": {
+        "bytes": 63117,
+        "rawBytes": 63117,
+        "keptOriginal": false,
+        "ms": 6,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 157,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.03,
+        "outputSha256": "d2b700323620b02c826803a40f9867760ce4592913a28949cf4065d596f312a6",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "mupdf-lossless": {
+        "bytes": 18281,
+        "rawBytes": 18281,
+        "keptOriginal": false,
+        "ms": 13,
+        "outputSha256": "57ab11fb829684582cc3e0681283be316dfd7c039bbc2d330bfcbd62a6c769ed",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 157,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 71.04,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective": {
+        "bytes": 66925,
+        "rawBytes": 66925,
+        "keptOriginal": true,
+        "ms": 2,
+        "imageStats": {
+          "images": 0,
+          "recompressed": 0,
+          "jpeg": 0,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 0,
+          "bytesAfter": 0,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 157,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": -6.01,
+        "outputSha256": "197a7948a17e2917e30d33e37789ebca34e4865c9b19badf0089d7ea175568a2",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective-high": {
+        "bytes": 66925,
+        "rawBytes": 66925,
+        "keptOriginal": true,
+        "ms": 2,
+        "imageStats": {
+          "images": 0,
+          "recompressed": 0,
+          "jpeg": 0,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 0,
+          "bytesAfter": 0,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "197a7948a17e2917e30d33e37789ebca34e4865c9b19badf0089d7ea175568a2",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 157,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": -6.01,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "hybrid-high": {
+        "bytes": 18281,
+        "rawBytes": 18281,
+        "keptOriginal": false,
+        "ms": 14,
+        "precedingImageMs": 2,
+        "outputSha256": "de9c1650002b92832a12036fb6ea08b0608c4c4c25d6f65235c94636e14c4453",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 157,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 71.04,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      }
+    },
+    "inputSha256": "197a7948a17e2917e30d33e37789ebca34e4865c9b19badf0089d7ea175568a2",
+    "pages": 1,
+    "textCharacters": 157
+  },
+  {
+    "name": "photo-device-rgb",
+    "originalBytes": 630613,
+    "engines": {
+      "current-gentle": {
+        "bytes": 630171,
+        "ms": 13,
+        "keptOriginal": false,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.0,
+        "outputSha256": "ef55006574d2f47195966018ac736581aa81a1ef539055d43e497d7558df5bf7",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "current-strong": {
+        "bytes": 190348,
+        "ms": 62,
+        "keptOriginal": false,
+        "textExact": false,
+        "textGeometryExact": false,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 0,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 2.16425,
+            "maxDifference": 255,
+            "ssim": 0.963233
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 2.16894,
+            "maxDifference": 255,
+            "ssim": 0.963184
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.963184,
+        "maximumMAE": 2.16894,
+        "smallerThanCurrentGentlePercent": 69.79,
+        "outputSha256": "b3140f7e7ce5f0111f11d67001ab854b4691cc8a8e36f46cf89341e9789815f5",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-lossless": {
+        "bytes": 629621,
+        "rawBytes": 629621,
+        "keptOriginal": false,
+        "ms": 34,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.09,
+        "outputSha256": "5c319e63757f94a18d7b0be095eb0952ecf1ec58eee304d92d452165371b0d93",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-images": {
+        "bytes": 110309,
+        "rawBytes": 110309,
+        "keptOriginal": false,
+        "ms": 50,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.98479,
+            "maxDifference": 63,
+            "ssim": 0.985747
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 0.98479,
+            "maxDifference": 63,
+            "ssim": 0.985747
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.985747,
+        "maximumMAE": 0.98479,
+        "smallerThanCurrentGentlePercent": 82.5,
+        "outputSha256": "dc2b9cfd126ff4f5c8baf29c4f2f1df0d10146f2e5e8601dde187b337f360139",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "mupdf-lossless": {
+        "bytes": 629603,
+        "rawBytes": 629603,
+        "keptOriginal": false,
+        "ms": 2,
+        "outputSha256": "bdbd874734dad1b17f8782510c0c5cabe1c88942df82cff4479ac59daa855a63",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.09,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective": {
+        "bytes": 63075,
+        "rawBytes": 63075,
+        "keptOriginal": false,
+        "ms": 39,
+        "imageStats": {
+          "images": 1,
+          "recompressed": 1,
+          "jpeg": 1,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 627921,
+          "bytesAfter": 60465,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 1,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.77243,
+            "maxDifference": 41,
+            "ssim": 0.990534
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 0.77243,
+            "maxDifference": 41,
+            "ssim": 0.990534
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.990534,
+        "maximumMAE": 0.77243,
+        "smallerThanCurrentGentlePercent": 89.99,
+        "outputSha256": "00c5705154aa0dceb9d20e5d1eb4a4f33139b1c636e13de54d55b69ee9896709",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective-high": {
+        "bytes": 165008,
+        "rawBytes": 165008,
+        "keptOriginal": false,
+        "ms": 75,
+        "imageStats": {
+          "images": 1,
+          "recompressed": 1,
+          "jpeg": 1,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 627921,
+          "bytesAfter": 162396,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 1,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "19335018bb64676a75ce68c6d6d4a042e308fca46fbc8face3ee9d2235d6558c",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.36743,
+            "maxDifference": 16,
+            "ssim": 0.996655
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 0.36743,
+            "maxDifference": 16,
+            "ssim": 0.996655
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.996655,
+        "maximumMAE": 0.36743,
+        "smallerThanCurrentGentlePercent": 73.82,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "hybrid-high": {
+        "bytes": 164076,
+        "rawBytes": 164076,
+        "keptOriginal": false,
+        "ms": 2,
+        "precedingImageMs": 75,
+        "outputSha256": "f6b8b94fa48f9800eb2311acbcdec82fa31a42ae920d758d425016e984cf6651",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.36743,
+            "maxDifference": 16,
+            "ssim": 0.996655
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 0.36743,
+            "maxDifference": 16,
+            "ssim": 0.996655
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.996655,
+        "maximumMAE": 0.36743,
+        "smallerThanCurrentGentlePercent": 73.96,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      }
+    },
+    "inputSha256": "a90c4fb8aad5f11eda1a010ae0a3fd967c5a13cfe9a814289db209f462123c54",
+    "pages": 2,
+    "textCharacters": 268
+  },
+  {
+    "name": "photo-flate",
+    "originalBytes": 633124,
+    "engines": {
+      "current-gentle": {
+        "bytes": 632627,
+        "ms": 17,
+        "keptOriginal": false,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.0,
+        "outputSha256": "00b2cd90bd82ac7dbc96cf4c34cd424d9b361cc7d5c67fc037898128a685384e",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "current-strong": {
+        "bytes": 190348,
+        "ms": 66,
+        "keptOriginal": false,
+        "textExact": false,
+        "textGeometryExact": false,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 0,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 2.16425,
+            "maxDifference": 255,
+            "ssim": 0.963233
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 2.16894,
+            "maxDifference": 255,
+            "ssim": 0.963184
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.963184,
+        "maximumMAE": 2.16894,
+        "smallerThanCurrentGentlePercent": 69.91,
+        "outputSha256": "b3140f7e7ce5f0111f11d67001ab854b4691cc8a8e36f46cf89341e9789815f5",
+        "iccPayloadsExact": false,
+        "alphaMasksExact": true
+      },
+      "qpdf-lossless": {
+        "bytes": 632072,
+        "rawBytes": 632072,
+        "keptOriginal": false,
+        "ms": 35,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.09,
+        "outputSha256": "d2de63a1c0219e4d41000a65c34034d9b00633002fb10ba5dc6faf2dc24ad8a7",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-images": {
+        "bytes": 632059,
+        "rawBytes": 632059,
+        "keptOriginal": false,
+        "ms": 35,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.09,
+        "outputSha256": "a119ea3058e6ffa0e275b5562594e67b4ca83f06beeb5754cba15183703d9af2",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "mupdf-lossless": {
+        "bytes": 632055,
+        "rawBytes": 632055,
+        "keptOriginal": false,
+        "ms": 3,
+        "outputSha256": "a00477ac5952b69cea421f6d74faafbd42db1d2936a70b2339c25c4f9f3121d3",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.09,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective": {
+        "bytes": 65580,
+        "rawBytes": 65580,
+        "keptOriginal": false,
+        "ms": 40,
+        "imageStats": {
+          "images": 1,
+          "recompressed": 1,
+          "jpeg": 1,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 627921,
+          "bytesAfter": 60465,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 1,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.77243,
+            "maxDifference": 41,
+            "ssim": 0.990534
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 0.77243,
+            "maxDifference": 41,
+            "ssim": 0.990534
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.990534,
+        "maximumMAE": 0.77243,
+        "smallerThanCurrentGentlePercent": 89.63,
+        "outputSha256": "64d6295b051359c959b2ee8c42face34b64c5fb9d91ed0ecc0635ee68c9bcdab",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective-high": {
+        "bytes": 167513,
+        "rawBytes": 167513,
+        "keptOriginal": false,
+        "ms": 76,
+        "imageStats": {
+          "images": 1,
+          "recompressed": 1,
+          "jpeg": 1,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 627921,
+          "bytesAfter": 162396,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 1,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "248cf88b005677ae1df1e131afad5318c9b497864a2b4309752a9663c3088a1d",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.36743,
+            "maxDifference": 16,
+            "ssim": 0.996655
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 0.36743,
+            "maxDifference": 16,
+            "ssim": 0.996655
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.996655,
+        "maximumMAE": 0.36743,
+        "smallerThanCurrentGentlePercent": 73.52,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "hybrid-high": {
+        "bytes": 166528,
+        "rawBytes": 166528,
+        "keptOriginal": false,
+        "ms": 2,
+        "precedingImageMs": 76,
+        "outputSha256": "60821252e9828f950870fd9e22a6f733f11c7194a98104a31091176d28894d02",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 268,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.36743,
+            "maxDifference": 16,
+            "ssim": 0.996655
+          },
+          {
+            "page": 2,
+            "pixelExact": false,
+            "mae": 0.36743,
+            "maxDifference": 16,
+            "ssim": 0.996655
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.996655,
+        "maximumMAE": 0.36743,
+        "smallerThanCurrentGentlePercent": 73.68,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      }
+    },
+    "inputSha256": "35337c8055d7c7f2d8b2c478ee5b01712cb95ae9bdeb5ce76467e979720c821a",
+    "pages": 2,
+    "textCharacters": 268
+  },
+  {
+    "name": "photo-jpeg",
+    "originalBytes": 71735,
+    "engines": {
+      "current-gentle": {
+        "bytes": 71585,
+        "ms": 2,
+        "keptOriginal": false,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 152,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.0,
+        "outputSha256": "645f2df284f6b5b3daac6be2dc5baaa32260018db378ee33ebf9c4f1b266d511",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "current-strong": {
+        "bytes": 71735,
+        "ms": 61,
+        "keptOriginal": true,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 152,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": -0.21,
+        "outputSha256": "c050f32e742c46441ad5b2e376f8f0fcd2ae72e7d199762eba24e346a4e05d7d",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-lossless": {
+        "bytes": 71573,
+        "rawBytes": 71573,
+        "keptOriginal": false,
+        "ms": 2,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 152,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.02,
+        "outputSha256": "053ffb8cdb9bd66506f62553e9606ae0b016a22a46117045ce037669092aedba",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-images": {
+        "bytes": 71568,
+        "rawBytes": 71568,
+        "keptOriginal": false,
+        "ms": 2,
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 152,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.02,
+        "outputSha256": "07a2db0b3644744e2b17104be8f202a166efe109bfde1df6209fa4e6542f4217",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "mupdf-lossless": {
+        "bytes": 71561,
+        "rawBytes": 71561,
+        "keptOriginal": false,
+        "ms": 2,
+        "outputSha256": "bca09ac1961d87480fb186facd2c7f79cd66e2552aba4588b2fd5a6e55a62e31",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 152,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.03,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective": {
+        "bytes": 64675,
+        "rawBytes": 64675,
+        "keptOriginal": false,
+        "ms": 45,
+        "imageStats": {
+          "images": 1,
+          "recompressed": 1,
+          "jpeg": 1,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 67580,
+          "bytesAfter": 60520,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 152,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.43087,
+            "maxDifference": 39,
+            "ssim": 0.997092
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.997092,
+        "maximumMAE": 0.43087,
+        "smallerThanCurrentGentlePercent": 9.65,
+        "outputSha256": "61bb13372f4db8c4a74ed274eaaccc4d1043f654ddd1ee5a1027b4c60236c9e1",
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective-high": {
+        "bytes": 71735,
+        "rawBytes": 71735,
+        "keptOriginal": true,
+        "ms": 49,
+        "imageStats": {
+          "images": 1,
+          "recompressed": 0,
+          "jpeg": 0,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 1,
+          "skipped": 0,
+          "bytesBefore": 67580,
+          "bytesAfter": 67580,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 1,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "c050f32e742c46441ad5b2e376f8f0fcd2ae72e7d199762eba24e346a4e05d7d",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 152,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": -0.21,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "hybrid-high": {
+        "bytes": 71561,
+        "rawBytes": 71561,
+        "keptOriginal": false,
+        "ms": 2,
+        "precedingImageMs": 49,
+        "outputSha256": "3bfa8e624a134166945fa32182f8f43d89707c6b2c39de139b99294757fa6e16",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 152,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.03,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      }
+    },
+    "inputSha256": "c050f32e742c46441ad5b2e376f8f0fcd2ae72e7d199762eba24e346a4e05d7d",
+    "pages": 1,
+    "textCharacters": 152
+  },
+  {
+    "name": "scan-ocr",
+    "originalBytes": 631635,
+    "engines": {
+      "current-gentle": {
+        "bytes": 631518,
+        "ms": 16,
+        "keptOriginal": false,
+        "outputSha256": "08841ed3981126bd826c438dfd975e89f7780b9e7f476582e44f23c7e8cb9858",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 40,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.0,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "current-strong": {
+        "bytes": 82411,
+        "ms": 42,
+        "keptOriginal": false,
+        "outputSha256": "86fe8b11de6c7a2f272e2d7e6398cdfc05b673dd9b3f6af4a344869b9be12c70",
+        "textExact": false,
+        "textGeometryExact": false,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 0,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 3.52722,
+            "maxDifference": 141,
+            "ssim": 0.943996
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.943996,
+        "maximumMAE": 3.52722,
+        "smallerThanCurrentGentlePercent": 86.95,
+        "iccPayloadsExact": false,
+        "alphaMasksExact": true
+      },
+      "qpdf-lossless": {
+        "bytes": 630986,
+        "rawBytes": 630986,
+        "keptOriginal": false,
+        "ms": 34,
+        "outputSha256": "5835fffc3ce98270ad30b0d0cd074c56701fb56027b6c015be49961e7f266b9b",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 40,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.08,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-images": {
+        "bytes": 630979,
+        "rawBytes": 630979,
+        "keptOriginal": false,
+        "ms": 34,
+        "outputSha256": "6e5bb0c592c3b4f277198569e3d79bf853bb19e58dcce58cb5a370b4d997643c",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 40,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.09,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "mupdf-lossless": {
+        "bytes": 631502,
+        "rawBytes": 631502,
+        "keptOriginal": false,
+        "ms": 3,
+        "outputSha256": "ddda1046dbf362c05a48629e677f3298ca0e39255ebf1fcbb56ed95d38148b88",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 40,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.0,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective": {
+        "bytes": 64175,
+        "rawBytes": 64175,
+        "keptOriginal": false,
+        "ms": 39,
+        "imageStats": {
+          "images": 1,
+          "recompressed": 1,
+          "jpeg": 1,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 627921,
+          "bytesAfter": 60465,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "1990febab5c8b8c97f352034f975c5be434ab63e2f635dd4e65ce5b95eb540a6",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 40,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 1.56629,
+            "maxDifference": 37,
+            "ssim": 0.979557
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.979557,
+        "maximumMAE": 1.56629,
+        "smallerThanCurrentGentlePercent": 89.84,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective-high": {
+        "bytes": 166108,
+        "rawBytes": 166108,
+        "keptOriginal": false,
+        "ms": 75,
+        "imageStats": {
+          "images": 1,
+          "recompressed": 1,
+          "jpeg": 1,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 627921,
+          "bytesAfter": 162396,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 1,
+              "changed": 1,
+              "jpeg": 1,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "eb181786ac326300aa1699ba744a00037d0f417d5bb7470d6473b72c1aa96710",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 40,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.74692,
+            "maxDifference": 13,
+            "ssim": 0.992497
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.992497,
+        "maximumMAE": 0.74692,
+        "smallerThanCurrentGentlePercent": 73.7,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "hybrid-high": {
+        "bytes": 165975,
+        "rawBytes": 165975,
+        "keptOriginal": false,
+        "ms": 2,
+        "precedingImageMs": 75,
+        "outputSha256": "e5218ea907ad54e75d1f136fd6b5947e01b8b73d13f0ec878613ce77e95b5966",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 40,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": false,
+            "mae": 0.74692,
+            "maxDifference": 13,
+            "ssim": 0.992497
+          }
+        ],
+        "pixelExact": false,
+        "minimumSSIM": 0.992497,
+        "maximumMAE": 0.74692,
+        "smallerThanCurrentGentlePercent": 73.72,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      }
+    },
+    "inputSha256": "f07e43ef0b7045453edc7bba5b8442239240e99eadb71bbda745a9575340efab",
+    "pages": 1,
+    "textCharacters": 40
+  },
+  {
+    "name": "text-vectors",
+    "originalBytes": 30507,
+    "engines": {
+      "current-gentle": {
+        "bytes": 27824,
+        "ms": 4,
+        "keptOriginal": false,
+        "outputSha256": "c783221c9c84056450761ac157f0b669f499583da869c5cfc826fc2c901be44a",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 7887,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.0,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "current-strong": {
+        "bytes": 30507,
+        "ms": 67,
+        "keptOriginal": true,
+        "outputSha256": "25cae2b6c4b48672c5efe4aef3a3d206994a58de09540fd8ed104219c2e5769e",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 7887,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": -9.64,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-lossless": {
+        "bytes": 27276,
+        "rawBytes": 27276,
+        "keptOriginal": false,
+        "ms": 5,
+        "outputSha256": "76bc17ab33273d006483cd955495630eb1c7f94d39a46f181a5870497cd5aea2",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 7887,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 1.97,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-images": {
+        "bytes": 27259,
+        "rawBytes": 27259,
+        "keptOriginal": false,
+        "ms": 6,
+        "outputSha256": "e9fea396ab2cf1fdbd9b1880a3c6b7ba3fa4992869dfcf90f3d9b7050f076732",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 7887,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 2.03,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "mupdf-lossless": {
+        "bytes": 9868,
+        "rawBytes": 9868,
+        "keptOriginal": false,
+        "ms": 6,
+        "outputSha256": "c4e10b88d0c51dc70e7e16086d88dbe2248f392efb416dbaf682ef9c25f08fae",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 7887,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 64.53,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective": {
+        "bytes": 30507,
+        "rawBytes": 30507,
+        "keptOriginal": true,
+        "ms": 2,
+        "imageStats": {
+          "images": 0,
+          "recompressed": 0,
+          "jpeg": 0,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 0,
+          "bytesAfter": 0,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 1,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 2,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "25cae2b6c4b48672c5efe4aef3a3d206994a58de09540fd8ed104219c2e5769e",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 7887,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": -9.64,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective-high": {
+        "bytes": 30507,
+        "rawBytes": 30507,
+        "keptOriginal": true,
+        "ms": 3,
+        "imageStats": {
+          "images": 0,
+          "recompressed": 0,
+          "jpeg": 0,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 0,
+          "bytesBefore": 0,
+          "bytesAfter": 0,
+          "skips": {},
+          "pages": [
+            {
+              "page": 0,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 1,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 2,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "25cae2b6c4b48672c5efe4aef3a3d206994a58de09540fd8ed104219c2e5769e",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 7887,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": -9.64,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "hybrid-high": {
+        "bytes": 9868,
+        "rawBytes": 9868,
+        "keptOriginal": false,
+        "ms": 6,
+        "precedingImageMs": 3,
+        "outputSha256": "e77af9433866d526d80aabcfe01880b07150c17823443bc5a1ee85200a1edcac",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 7887,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 64.53,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      }
+    },
+    "inputSha256": "25cae2b6c4b48672c5efe4aef3a3d206994a58de09540fd8ed104219c2e5769e",
+    "pages": 3,
+    "textCharacters": 7887
+  },
+  {
+    "name": "tracemonkey",
+    "originalBytes": 1016315,
+    "engines": {
+      "current-gentle": {
+        "bytes": 962726,
+        "ms": 147,
+        "keptOriginal": false,
+        "outputSha256": "c659426843f78eac4f3b88043a69d5253ac8101da17ac1757146c6c54ac97cf7",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 82661,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 5,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 6,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 7,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 8,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 9,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 10,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 11,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 12,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 13,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 14,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 0.0,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "current-strong": {
+        "bytes": 1016315,
+        "ms": 767,
+        "keptOriginal": true,
+        "outputSha256": "3662ff519e485810520552bf301d8c3b2b917fd2f83303f4965d7abed367e113",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 82661,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 5,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 6,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 7,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 8,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 9,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 10,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 11,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 12,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 13,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 14,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": -5.57,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-lossless": {
+        "bytes": 866294,
+        "rawBytes": 866294,
+        "keptOriginal": false,
+        "ms": 158,
+        "outputSha256": "3b1dc56ea2c848152650fb85aa07c671fa2cb525975b0a06093c17ded729c585",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 82661,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 5,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 6,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 7,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 8,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 9,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 10,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 11,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 12,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 13,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 14,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 10.02,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "qpdf-images": {
+        "bytes": 866277,
+        "rawBytes": 866277,
+        "keptOriginal": false,
+        "ms": 218,
+        "outputSha256": "e66bfcf0acc7d6229d0b63429243fc9b987bd2899876cf2dbcfd48a2560e006d",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 82661,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 5,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 6,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 7,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 8,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 9,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 10,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 11,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 12,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 13,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 14,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 10.02,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "mupdf-lossless": {
+        "bytes": 857338,
+        "rawBytes": 857338,
+        "keptOriginal": false,
+        "ms": 73,
+        "outputSha256": "56338c847ebaac087bf57bbd719ba80d738ba10bbb00c49dd1450c20a95296c2",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 82661,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 5,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 6,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 7,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 8,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 9,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 10,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 11,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 12,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 13,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 14,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 10.95,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective": {
+        "bytes": 992058,
+        "rawBytes": 992058,
+        "keptOriginal": false,
+        "ms": 13,
+        "imageStats": {
+          "images": 90,
+          "recompressed": 0,
+          "jpeg": 0,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 90,
+          "bytesBefore": 10897,
+          "bytesAfter": 10897,
+          "skips": {
+            "tiny": 90
+          },
+          "pages": [
+            {
+              "page": 0,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 1,
+              "total": 10,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 2,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 3,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 4,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 5,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 6,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 7,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 8,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 9,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 10,
+              "total": 78,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 11,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 12,
+              "total": 2,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 13,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "5dd8363ae1ce9b29004d28f327ebebab8ae236197fd7c86c7d859ea7615793fa",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 82661,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 5,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 6,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 7,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 8,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 9,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 10,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 11,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 12,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 13,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 14,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": -3.05,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "image-selective-high": {
+        "bytes": 992058,
+        "rawBytes": 992058,
+        "keptOriginal": false,
+        "ms": 13,
+        "imageStats": {
+          "images": 90,
+          "recompressed": 0,
+          "jpeg": 0,
+          "lossless": 0,
+          "downsampled": 0,
+          "blanked": 0,
+          "keptOriginal": 0,
+          "skipped": 90,
+          "bytesBefore": 10897,
+          "bytesAfter": 10897,
+          "skips": {
+            "tiny": 90
+          },
+          "pages": [
+            {
+              "page": 0,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 1,
+              "total": 10,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 2,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 3,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 4,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 5,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 6,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 7,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 8,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 9,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 10,
+              "total": 78,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 11,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 12,
+              "total": 2,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            },
+            {
+              "page": 13,
+              "total": 0,
+              "changed": 0,
+              "jpeg": 0,
+              "lossless": 0,
+              "blanked": 0,
+              "downsampled": 0
+            }
+          ]
+        },
+        "outputSha256": "e38a26e2e87e3bbde1917c8d8c12cc2089270917b5584f1933d916b4e1757109",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 82661,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 5,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 6,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 7,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 8,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 9,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 10,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 11,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 12,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 13,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 14,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": -3.05,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      },
+      "hybrid-high": {
+        "bytes": 857338,
+        "rawBytes": 857338,
+        "keptOriginal": false,
+        "ms": 75,
+        "precedingImageMs": 13,
+        "outputSha256": "0fce74a8b2fbe538286670f7c1b2c33f31ce545705ee2bf76772775e1ed830da",
+        "textExact": true,
+        "textGeometryExact": true,
+        "pageGeometryExact": true,
+        "linksExact": true,
+        "formsExact": true,
+        "bookmarksExact": true,
+        "vectorsExact": true,
+        "allTextCharacters": 82661,
+        "renderPages": [
+          {
+            "page": 1,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 2,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 3,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 4,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 5,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 6,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 7,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 8,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 9,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 10,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 11,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 12,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 13,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          },
+          {
+            "page": 14,
+            "pixelExact": true,
+            "mae": 0.0,
+            "maxDifference": 0,
+            "ssim": 1.0
+          }
+        ],
+        "pixelExact": true,
+        "minimumSSIM": 1.0,
+        "maximumMAE": 0.0,
+        "smallerThanCurrentGentlePercent": 10.95,
+        "iccPayloadsExact": true,
+        "alphaMasksExact": true
+      }
+    },
+    "inputSha256": "3662ff519e485810520552bf301d8c3b2b917fd2f83303f4965d7abed367e113",
+    "pages": 14,
+    "textCharacters": 82661
+  }
+]
