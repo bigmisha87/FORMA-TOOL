@@ -61,24 +61,10 @@ export async function organizePdf(sources: PdfSource[], pages: PdfPage[]) {
   return new Blob([await out.save({ useObjectStreams: true }) as BlobPart], { type: 'application/pdf' });
 }
 
-export async function compressPdf(source: PdfSource, strong: boolean, dpi: number, progress: (n: number) => void) {
-  if (!strong) {
-    const doc = await PDFDocument.load(source.bytes, { updateMetadata: false });
-    const result = new Blob([await doc.save({ useObjectStreams: true, addDefaultPage: false }) as BlobPart], { type: 'application/pdf' });
-    progress(1); return result.size < source.file.size ? result : source.file;
-  }
-  const doc = await PDFDocument.create();
-  for (let i = 0; i < source.doc.getPageCount(); i++) {
-    const canvas = await renderPage(source, i, dpi / 72);
-    const jpeg = await toBlob(canvas, 'image/jpeg', .68);
-    const image = await doc.embedJpg(await jpeg.arrayBuffer());
-    const page = await source.preview.getPage(i + 1); const viewport = page.getViewport({ scale: 1 });
-    const output = doc.addPage([viewport.width, viewport.height]);
-    output.drawImage(image, { x: 0, y: 0, width: viewport.width, height: viewport.height });
-    canvas.width = 0; progress((i + 1) / source.doc.getPageCount()); await tick();
-  }
-  const result = new Blob([await doc.save() as BlobPart], { type: 'application/pdf' });
-  return result.size < source.file.size ? result : source.file;
+export async function compressPdf(source: PdfSource, highQuality: boolean, progress: (n: number) => void) {
+  const { runPdfCompression } = await import('./pdf-compress-runner');
+  const bytes = await runPdfCompression(source.bytes, highQuality, progress);
+  return bytes.length < source.file.size ? new Blob([bytes as BlobPart], { type: 'application/pdf' }) : source.file;
 }
 
 export async function splitPdf(sources: PdfSource[], pages: PdfPage[], progress: (n: number) => void) {

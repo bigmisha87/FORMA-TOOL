@@ -1,9 +1,10 @@
 import { chromium } from '@playwright/test';
-import { PDFDocument, rgb } from 'pdf-lib';
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { PDFDocument, PDFName, PDFDict, rgb } from 'pdf-lib';
+import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import gifenc from 'gifenc';
 import {parseGIF,decompressFrames} from 'gifuct-js';
+import {unzipSync} from 'fflate';
 
 const url = process.env.BUILT_URL || 'http://127.0.0.1:4186/FORMA-TOOL/';
 const browser = await chromium.launch({ channel:'chrome' });
@@ -51,6 +52,29 @@ try {
   await page.getByRole('button',{name:'סיבוב 90° 1',exact:true}).click();await page.getByRole('button',{name:'סידור ואיחוד',exact:true}).click();
   const waiting=page.waitForEvent('download');await page.getByRole('button',{name:'הורדה',exact:true}).click();const stream=await (await waiting).createReadStream();const chunks=[];for await(const chunk of stream)chunks.push(chunk);const output=await PDFDocument.load(Buffer.concat(chunks));
   assert.equal(output.getPageCount(),2);assert.equal(output.getPage(0).getRotation().angle,90);assert.deepEqual(errors,[]);assert.deepEqual(failedRequests,[]);
-  const result={url,passed:true,imageWorker:true,codecs:['MozJPEG','Oxipng','Gifsicle'],pdfWorker:true,pages:output.getPageCount(),runtimeErrors:errors,failedRequests};
+  // A compiled MuPDF worker must actually compress while preserving native text.
+  await page.getByRole('button',{name:'ניקוי הכל',exact:true}).click();
+  await page.getByRole('button',{name:'הקטנת PDF פחות משקל, יותר נוח לשלוח'}).click();
+  const photo=readFileSync('tests/pdf-benchmark/fixtures/photo-flate.pdf');
+  await page.getByTestId('pdf-upload').setInputFiles({name:'preserve.pdf',mimeType:'application/pdf',buffer:photo});
+  await page.getByRole('button',{name:'הקטנת PDF',exact:true}).click();
+  const download=page.waitForEvent('download');await page.getByRole('button',{name:'הורדה',exact:true}).click();
+  const pdfStream=await (await download).createReadStream();const pdfChunks=[];for await(const chunk of pdfStream)pdfChunks.push(chunk);const compressed=Buffer.concat(pdfChunks);
+  assert.ok(compressed.length<photo.length*.4);
+  await page.screenshot({path:'docs/pdf-compression-preview.png',fullPage:true});
+  const compressedDoc=await PDFDocument.load(compressed);assert.equal(compressedDoc.getPageCount(),2);
+  const fonts=compressedDoc.getPage(0).node.Resources().lookup(PDFName.of('Font'),PDFDict);assert.ok(fonts.keys().length>0);
+  writeFileSync('tmp/pdf-built-output.pdf',compressed);
+  // Reopen the real output with the production viewer as well.
+  await page.getByRole('button',{name:'ניקוי הכל',exact:true}).click();
+  await page.getByTestId('pdf-upload').setInputFiles({name:'reopen.pdf',mimeType:'application/pdf',buffer:compressed});
+  await page.getByText('reopen.pdf',{exact:true}).waitFor();
+  console.log(`MuPDF + MozJPEG compiled worker passed: ${photo.length} -> ${compressed.length} bytes`);
+  const source=await context.request.get(new URL('forma-source.zip',url).href);assert.equal(source.status(),200);
+  const entries=unzipSync(await source.body());assert.ok(entries['src/lib/pdf-compress.ts']);assert.ok(entries['src/lib/pdf-compress.worker.ts']);assert.ok(entries['LICENSE']);assert.ok(entries['package-lock.json']);
+  const license=await context.request.get(new URL('LICENSE.txt',url).href);assert.ok((await license.text()).includes('GNU AFFERO GENERAL PUBLIC LICENSE'));
+  const nativeSource=await context.request.head(new URL('third_party/mupdf/mupdf-1.28.1-source.tar.gz',url).href);assert.equal(nativeSource.status(),200);
+  assert.deepEqual(errors,[]);assert.deepEqual(failedRequests,[]);
+  const result={url,passed:true,imageWorker:true,codecs:['MozJPEG','Oxipng','Gifsicle','MuPDF'],pdfWorker:true,textPreservingCompression:true,sourceAndLicense:true,pages:output.getPageCount(),runtimeErrors:errors,failedRequests};
   mkdirSync('tmp',{recursive:true});writeFileSync('tmp/production-check.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
 } finally { await browser.close(); }

@@ -6,7 +6,7 @@ Validated locally on 18 October 2026. Tests use deterministic synthetic fixtures
 
 - TypeScript check and Vite production build.
 - 14 unit tests for landscape/portrait fitting, optional enlargement, stretching, invalid dimensions, canvas limits, PDF range parsing, units and filenames.
-- 33 browser scenarios in Chrome, Firefox and WebKit (99 executions).
+- 53 browser scenarios in Chrome, Firefox and WebKit (159 executions).
 - Production build smoke test mounted at `/FORMA-TOOL/`, matching GitHub Pages. It verifies the compiled image worker, local PDF.js worker/resources, all three compiled image codecs (MozJPEG, Oxipng, Gifsicle), and a downloaded PDF’s page count and rotation. It rejects runtime errors and failed HTTP requests.
 - Automated axe WCAG A/AA checks on the initial image workspace in both light and dark modes. These checks complement keyboard and visual review; they are not a comprehensive accessibility certification.
 - Manual screenshot review of desktop Hebrew, mobile Hebrew, English dark mode and populated PDF workspace.
@@ -24,7 +24,7 @@ Validated locally on 18 October 2026. Tests use deterministic synthetic fixtures
 | PDF organize | Real output page count, width/order, rotation, deletion, merging and selected range |
 | PDF split | ZIP contains individual one-page PDFs with the expected source dimensions |
 | PDF to images | Download contains an actual JPEG with expected 150 DPI dimensions |
-| PDF compression | Gentle compression retains pages and does not grow the file; strong mode substantially reduces an image-heavy fixture and the result reopens |
+| PDF compression | Both modes preserve native text, geometry, links, forms and outlines in nine fixed PDFs. Independent Poppler/QPDF/Python checks verify lossless pixels or SSIM >= 0.99, ICC/alpha payloads and vector operations; signed PDFs and failed codec downloads are tested |
 | Images to PDF | Output pages retain both portrait and landscape proportions |
 | Interface | Hebrew RTL by default, English LTR, saved dark/startup preferences, mobile page overflow, keyboard dismissal of help |
 | Errors | Invalid image/PDF, invalid dimensions, invalid page range, recovery for a subsequent valid file |
@@ -50,3 +50,5 @@ npm run test:browsers
 The GitHub workflow reruns unit tests, Chrome browser scenarios, the full old/new benchmark with its independent Python quality assertions, the production build and the production smoke test before publishing. The test report is stored as a workflow artifact. A separate manual Firefox/WebKit run is supported locally.
 
 The fixtures exercise the listed operations; unusual or damaged documents, every possible GIF disposal combination, color management profiles, very large files on every device, interactive PDF forms and digital signatures are not exhaustively covered. Product limits and output behavior are documented in the in-app help and README.
+
+The current PDF engine implementation, exact byte comparisons and license/source distribution are described in [PDF_COMPRESSION_IMPLEMENTATION.md](docs/PDF_COMPRESSION_IMPLEMENTATION.md).

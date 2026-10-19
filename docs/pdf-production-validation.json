@@ -1,0 +1,182 @@
+[
+  {
+    "name": "alpha-graphics",
+    "mode": "gentle",
+    "inputBytes": 910730,
+    "outputBytes": 908821,
+    "pages": 1,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "alpha-graphics",
+    "mode": "strong",
+    "inputBytes": 910730,
+    "outputBytes": 255461,
+    "pages": 1,
+    "textAndFeaturesExact": true,
+    "pixelExact": false,
+    "minimumSSIM": 0.998576
+  },
+  {
+    "name": "duplicate-assets",
+    "mode": "gentle",
+    "inputBytes": 4866987,
+    "outputBytes": 660362,
+    "pages": 4,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "duplicate-assets",
+    "mode": "strong",
+    "inputBytes": 4866987,
+    "outputBytes": 194846,
+    "pages": 4,
+    "textAndFeaturesExact": true,
+    "pixelExact": false,
+    "minimumSSIM": 0.997536
+  },
+  {
+    "name": "hebrew-form",
+    "mode": "gentle",
+    "inputBytes": 66925,
+    "outputBytes": 63021,
+    "pages": 1,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "hebrew-form",
+    "mode": "strong",
+    "inputBytes": 66925,
+    "outputBytes": 63021,
+    "pages": 1,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "photo-device-rgb",
+    "mode": "gentle",
+    "inputBytes": 630613,
+    "outputBytes": 629603,
+    "pages": 2,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "photo-device-rgb",
+    "mode": "strong",
+    "inputBytes": 630613,
+    "outputBytes": 164086,
+    "pages": 2,
+    "textAndFeaturesExact": true,
+    "pixelExact": false,
+    "minimumSSIM": 0.996655
+  },
+  {
+    "name": "photo-flate",
+    "mode": "gentle",
+    "inputBytes": 633124,
+    "outputBytes": 632055,
+    "pages": 2,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "photo-flate",
+    "mode": "strong",
+    "inputBytes": 633124,
+    "outputBytes": 166538,
+    "pages": 2,
+    "textAndFeaturesExact": true,
+    "pixelExact": false,
+    "minimumSSIM": 0.996655
+  },
+  {
+    "name": "photo-jpeg",
+    "mode": "gentle",
+    "inputBytes": 71735,
+    "outputBytes": 71561,
+    "pages": 1,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "photo-jpeg",
+    "mode": "strong",
+    "inputBytes": 71735,
+    "outputBytes": 71561,
+    "pages": 1,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "scan-ocr",
+    "mode": "gentle",
+    "inputBytes": 631635,
+    "outputBytes": 631502,
+    "pages": 1,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "scan-ocr",
+    "mode": "strong",
+    "inputBytes": 631635,
+    "outputBytes": 165985,
+    "pages": 1,
+    "textAndFeaturesExact": true,
+    "pixelExact": false,
+    "minimumSSIM": 0.992497
+  },
+  {
+    "name": "text-vectors",
+    "mode": "gentle",
+    "inputBytes": 30507,
+    "outputBytes": 9868,
+    "pages": 3,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "text-vectors",
+    "mode": "strong",
+    "inputBytes": 30507,
+    "outputBytes": 9868,
+    "pages": 3,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "tracemonkey",
+    "mode": "gentle",
+    "inputBytes": 1016315,
+    "outputBytes": 857338,
+    "pages": 14,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  },
+  {
+    "name": "tracemonkey",
+    "mode": "strong",
+    "inputBytes": 1016315,
+    "outputBytes": 857338,
+    "pages": 14,
+    "textAndFeaturesExact": true,
+    "pixelExact": true,
+    "minimumSSIM": 1.0
+  }
+]

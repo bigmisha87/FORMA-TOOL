@@ -20,7 +20,7 @@ export default function PdfWorkspace() {
   const sourcesRef = useRef(sources); sourcesRef.current = sources;
   useEffect(() => () => sourcesRef.current.forEach(s => void s.close()),[]);
   const [busy,setBusy] = useState(false), [progress,setProgress] = useState(0), [loading,setLoading] = useState(false);
-  const [error,setError] = useState<Key | null>(null), [strong,setStrong] = useState(false), [dpi,setDpi] = useState(120);
+  const [error,setError] = useState<Key | null>(null), [strong,setStrong] = useState(true);
   const [range,setRange] = useState(''), [results,setResults] = useState<Result[]>([]), [drag,setDrag] = useState<string | null>(null);
   const selected = pages.filter(p => p.selected);
   const activeTool = tools.find(tool => tool.mode === mode)!;
@@ -62,7 +62,7 @@ export default function PdfWorkspace() {
       if (mode === 'compress') {
         const output: Result[] = [];
         for (let i = 0; i < sources.length; i++) {
-          try { output.push({ blob:await compressPdf(sources[i],strong,dpi,p => setProgress((i+p)/sources.length)),name:outputName(sources[i].file.name,'pdf'),before:sources[i].file.size }); }
+          try { output.push({ blob:await compressPdf(sources[i],strong,p => setProgress((i+p)/sources.length)),name:outputName(sources[i].file.name,'pdf'),before:sources[i].file.size }); }
           catch (e) { setError(errorKey(e)); }
         }
         setResults(output);
@@ -78,7 +78,7 @@ export default function PdfWorkspace() {
     <div className="workspace-grid"><aside className="tool-sidebar"><div className="sidebar-label">01 <span>{t('stepOne')}</span></div><div className="tool-list">{tools.map(tool => <div key={tool.mode} className={`tool-wrap ${mode === tool.mode ? 'active' : ''}`}><button disabled={busy} className="tool-button" title={t(tool.sub)} aria-pressed={mode === tool.mode} onClick={() => { setMode(tool.mode); invalidate(); }}><tool.icon size={21}/><span><b>{t(tool.title)}</b><small>{t(tool.sub)}</small></span></button><HelpButton title={t(tool.title)} text={t(tool.help)}/></div>)}</div><div className="sidebar-tip"><Files size={20}/><p>{t('pdfArrangeHint')}</p></div></aside>
     <div className="work-area"><Dropzone pdf add={add} disabled={busy}/>
       <fieldset className="options-panel" disabled={busy}><legend>{t(mode === 'compress' ? 'pdfCompression' : mode === 'split' ? 'split' : mode === 'images' ? 'pdfImages' : 'organize')}<HelpButton title={t('pdfHelpTitle')} text={t('pdfHelpText')}/></legend>
-      {mode === 'compress' ? <><div className="option-grid"><div><label htmlFor="compression">{t('pdfCompression')}</label><select id="compression" value={strong ? 'strong' : 'gentle'} title={t('pdfCompression')} onChange={e => { setStrong(e.target.value === 'strong'); invalidate(); }}><option value="gentle">{t('gentle')}</option><option value="strong">{t('strong')}</option></select></div>{strong && <div><label htmlFor="dpi">{t('dpi')}</label><select id="dpi" title={t('dpi')} value={dpi} onChange={e => { setDpi(+e.target.value); invalidate(); }}><option value="96">{t('dpiScreen')}</option><option value="120">{t('dpiBalanced')}</option><option value="150">{t('dpiHigh')}</option></select></div>}</div><p className={strong ? 'notice' : 'hint'}>{t(strong ? 'strongHint' : 'gentleHint')}</p><small className="hint">{t('pdfBatchHint')}</small></> : <p className="hint">{t(mode === 'organize' ? 'pdfArrangeHint' : mode === 'split' ? 'pdfSplitHint' : 'pdfImagesHint')}</p>}
+      {mode === 'compress' ? <><div className="option-grid"><div><label htmlFor="compression">{t('pdfCompression')}</label><select id="compression" value={strong ? 'strong' : 'gentle'} title={t('pdfCompression')} onChange={e => { setStrong(e.target.value === 'strong'); invalidate(); }}><option value="gentle">{t('gentle')}</option><option value="strong">{t('strong')}</option></select></div></div><p className={strong ? 'notice' : 'hint'}>{t(strong ? 'strongHint' : 'gentleHint')}</p><small className="hint">{t('pdfBatchHint')}</small></> : <p className="hint">{t(mode === 'organize' ? 'pdfArrangeHint' : mode === 'split' ? 'pdfSplitHint' : 'pdfImagesHint')}</p>}
       </fieldset>
       {error && <div className="error" role="alert">{t(error)}<button className="icon-btn" title={t('close')} onClick={() => setError(null)}><X size={16}/></button></div>}
       {busy && <Progress value={progress} label={t(loading ? 'preparing' : 'processing')}/>}

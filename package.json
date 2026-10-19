@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "tsc -b && vite build",
+    "build": "node scripts/prepare-assets.mjs && node scripts/prepare-source.mjs && tsc -b && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test": "vitest run",
     "test:e2e": "playwright test --project=chrome",
@@ -16,14 +16,15 @@
   },
   "dependencies": {
     "@fontsource/heebo": "^5.3.0",
-    "@jsquash/jpeg": "^1.6.0",
-    "@jsquash/oxipng": "^2.3.0",
+    "@jsquash/jpeg": "1.6.0",
+    "@jsquash/oxipng": "2.3.0",
     "@pdf-lib/upng": "^1.0.1",
     "fflate": "^0.8.3",
     "gifenc": "^1.0.3",
-    "gifsicle-wasm-browser": "^1.5.19",
+    "gifsicle-wasm-browser": "1.5.19",
     "gifuct-js": "^2.1.2",
     "lucide-react": "^1.59.0",
+    "mupdf": "1.28.1",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^6.4.299",
     "react": "^19.3.1",
@@ -40,5 +41,6 @@
     "typescript": "^7.0.2",
     "vite": "^8.3.4",
     "vitest": "^5.0.5"
-  }
+  },
+  "license": "AGPL-3.0-or-later"
 }

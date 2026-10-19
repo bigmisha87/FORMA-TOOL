@@ -20,6 +20,14 @@ export async function mozJpeg(data: ImageData, quality: number): Promise<Blob> {
   return new Blob([bytes], { type: 'image/jpeg' });
 }
 
+// PDF image samples stay in their existing color space; retain all chroma detail.
+export async function mozJpegPdf(data: ImageData, grayscale: boolean): Promise<Uint8Array> {
+  jpegReady ??= initJpeg({ locateFile: () => asset('mozjpeg_enc.wasm') });
+  await jpegReady;
+  const bytes = await encodeJpeg(data, { quality: 97, auto_subsample: false, chroma_subsample: 1, color_space: grayscale ? 1 : 3, progressive: true, optimize_coding: true });
+  return new Uint8Array(bytes);
+}
+
 export async function oxipng(bytes: ArrayBuffer): Promise<Blob> {
   pngReady ??= initPng(asset('oxipng_bg.wasm'));
   await pngReady;
